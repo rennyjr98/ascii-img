@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
     }
 
     const imgURL: any = URL.createObjectURL(imgFile);
-    const sketch = (s: any) => {
+    const sketch = (s: p5) => {
       const density = 'Ñ@#W$9876543210?!abc;:+=-,._     ';
       let img: any;
 
@@ -98,6 +98,7 @@ export class AppComponent implements OnInit {
             s.text(density.charAt(charIndex), i * w + w * 0.5, j * h + h * 0.5);
           }
         }
+        s.save();
       };
     };
 
