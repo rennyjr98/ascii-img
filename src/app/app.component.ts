@@ -98,7 +98,7 @@ export class AppComponent implements OnInit {
             s.text(density.charAt(charIndex), i * w + w * 0.5, j * h + h * 0.5);
           }
         }
-        s.save();
+        //s.save();
       };
     };
 
