@@ -5,4 +5,4 @@ app.use(express.static(path.join(__dirname, "/dist/media-ascii")));
 app.get("/*", function (req, res) {
   res.sendFile(__dirname + "/dist/media-ascii/index.html");
 });
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 80);
