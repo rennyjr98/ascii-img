@@ -21,6 +21,7 @@ export class AppComponent implements OnInit {
     if (fileList != null) {
       if (fileList[0].type.includes('image')) {
         this.generateImg(fileList[0], this.renderedImgQuality, this.inBAndW);
+        element.value = '';
       }
     }
   }
@@ -57,7 +58,8 @@ export class AppComponent implements OnInit {
             height = isLowSize ? 1200 : img.height;
             break;
         }
-        s.createCanvas(width, height);
+        const canva = s.createCanvas(width, height);
+        canva.position(screen.width / 2 - width / 2);
         s.noLoop();
       };
 

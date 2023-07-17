@@ -1,19 +1,24 @@
 <div class="container text-center">
+  <div class="logo-container">
+    <img id="logo" src="../assets/logo.png" alt="logo" width="100px" />
+    <h1>MediaAscii</h1>
+  </div>
+
   <div class="container my-3">
     <div class="btn-group">
       <button
         class="btn"
         (click)="inBAndW = true"
-        [class.btn-outline-secondary]="!inBAndW"
-        [class.btn-secondary]="inBAndW"
+        [class.btn-outline-warning]="!inBAndW"
+        [class.btn-warning]="inBAndW"
       >
         B&W
       </button>
       <button
         class="btn"
         (click)="inBAndW = false"
-        [class.btn-outline-secondary]="inBAndW"
-        [class.btn-secondary]="!inBAndW"
+        [class.btn-outline-warning]="inBAndW"
+        [class.btn-warning]="!inBAndW"
       >
         Color
       </button>
