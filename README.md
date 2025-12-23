@@ -1,27 +1,50 @@
-# MediaAscii
+# 🖼️ ascii-img
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+Convert any image to **ASCII art** directly in your terminal or code!  
+Fast, lightweight, and simple — perfect for scripts, tools, or just for fun.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 🚀 What Is This?
 
-## Code scaffolding
+**ascii-img** is a utility that converts images (JPG) into ASCII representations.  
+Whether you want terminal art, stylized visual output, or just a neat hack — this tool makes it easy.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🔧 Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- 🧠 Converts a wide range of images to ASCII art
+- 📦 Works with common image formats
+- 📤 Outputs clean ASCII to terminal or file
+- ⚡ Fast and lightweight
+- 📍 Easy to integrate into other projects
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🛠 How It Works
 
-## Running end-to-end tests
+This tool reads the grayscale values of each pixel, then maps them to corresponding ASCII characters based on intensity.  
+Darker pixels become dense characters (`@`, `#`), lighter pixels become sparse characters (`.`, ` `), giving an art-like effect in text.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## 📦 Installation
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Clone the repo:
+
+```bash
+git clone https://github.com/rennyjr98/ascii-img.git
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+## ▶️ Usage
+
+Run the project and upload an image, after processing time you'll get a new image completely created using ASCII characters.
+
+![Screenshot](example/screenshot.png)
